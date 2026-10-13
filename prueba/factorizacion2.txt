@@ -1,0 +1,57 @@
+init:main
+
+proc main() {
+  <var>
+  int n, curr, d, ultim, cuenta, primero;
+  <var_>
+
+  curr = 2;
+  ultim = 0;
+  cuenta = 0;
+  primero = 1;
+
+  out << "introduce número : ";
+  in >> n;
+  out << " " << n << " == ";
+
+  while (curr <= n) {
+    d = n/curr;
+    if d * curr == n {
+      if curr != ultim {
+        ultim = curr;
+        cuenta = 1;
+      }if_ else {
+        cuenta = cuenta + 1;
+      }else_
+      n = n/curr;
+    }if_ else {
+      if cuenta > 0 {
+        if primero == 0 {
+          out << " * ";
+        }if_
+        primero = 0;
+        out << " " << curr;
+        if cuenta > 1 {
+          out << "^" << cuenta;
+        }if_
+      }if_
+      curr = curr + 1;
+      cuenta = 0;
+    }else_
+
+  }while_
+
+  if cuenta > 0 {
+    if primero == 0 {
+      out << " * ";
+    }if_
+    primero = 0;
+    out << " " << curr;
+    if cuenta > 1 {
+      out << "^" << cuenta;
+    }if_
+  }if_
+
+  out << "\n";
+
+}

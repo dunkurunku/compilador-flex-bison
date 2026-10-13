@@ -1,0 +1,27 @@
+init:main
+
+proc main() {
+  <var>
+  int n, curr, d;
+  <var_>
+
+  out << "introduce número : ";
+  in >> n;
+  out << " " << n << " == ";
+
+  curr = 2;
+
+  while (curr <= n) {
+    d = n/curr;
+    if d * curr == n {
+      out << "* " << curr << " ";
+      n = n/curr;
+    }if_ else {
+      curr = curr + 1;
+    }else_
+
+  }while_
+
+  out << "\n";
+
+}

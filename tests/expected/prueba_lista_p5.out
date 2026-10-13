@@ -1,0 +1,17 @@
+--- TEST SIMPLE LISTAS ---
+
+Tamano inicial (esperado 3): 3
+Valor en pos 1 (esperado 20): 20
+Nuevo valor en pos 1 (esperado 99): 99
+Nuevo tamano (esperado 4): 4
+Tras borrar el primero, ahora el 0 es (esperado 99): 99
+
+Tras sumar 5 (pos 0, esperado 15): 15
+Tras restar 10 (pos 1, esperado 15): 15
+Tras multiplicar por 2 (pos 2, esperado 50): 50
+Tras dividir por 2.0 (pos 0, esperado 10.0): 10.000000
+
+Cursor inicio (esperado 10): 10
+Cursor avanzado (esperado 20): 20
+
+--- FIN TEST ---

@@ -1,0 +1,5 @@
+Error Semántico (Línea 34): 'entero' ya declarado en este contexto.
+Error Semántico (Línea 40): 'salida2' no está declarado en el ámbito actual.
+Errores Léxicos: 0
+Errores Sintácticos: 0
+Errores Semánticos: 2

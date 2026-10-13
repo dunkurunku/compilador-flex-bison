@@ -1,0 +1,6 @@
+Error Semántico (Línea 9): Tipos incompatibles en suma/resta.
+Error Semántico (Línea 10): Variable 'c' no declarada.
+Error Semántico (Línea 11): La condición del IF debe ser bool.
+Errores Léxicos: 0
+Errores Sintácticos: 1
+Errores Semánticos: 3

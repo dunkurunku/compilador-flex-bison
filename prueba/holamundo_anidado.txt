@@ -1,0 +1,53 @@
+init:proc1
+
+proc proc3(){
+  <var>
+    string salida3;
+  <var_>
+
+  salida3 = "proc3: Adios Mundo!\n";
+
+  out << salida3;
+}
+
+proc proc1() {
+  <var>
+    string salida;
+  <var_>
+
+  salida = "proc1: Hola Mundo!\n";
+
+  out << salida;
+
+  proc proc2(){
+    <var>
+      string salida2;
+    <var_>
+
+    salida2 = "proc2: Buenas tardes Mundo!\n";
+
+    out << salida2;
+    
+    proc proc4(string salida){
+      <var>
+        int entero,entero2;
+        int entero;
+      <var_>
+
+      entero = 3;
+
+      if (entero == 3){
+        out << salida2;
+      } if_
+    }
+
+    salida2 = "proc4: Buenas noches Mundo!\n";
+    proc4(salida2);
+  }
+
+  proc2();
+  proc3();
+}
+
+
+

@@ -1,0 +1,71 @@
+init: main
+
+proc main() {
+    <var>
+        list int miLista;
+        list int li, l1;
+        list float lf;
+        list int listaNueva;
+        int valor;
+        int tam;
+        int valInt, vint;
+        float valFloat;
+    <var_>
+
+    out << "--- TEST SIMPLE LISTAS ---\n\n";
+
+    miLista = [10, 20, 30];
+    tam = #miLista;
+    out << "Tamano inicial (esperado 3): " << tam;
+
+    valor = miLista @ 1;
+    out << "\nValor en pos 1 (esperado 20): " << valor;
+
+    listaNueva = miLista @ 1 ++ 99;
+    
+    valor = listaNueva @ 1;
+    out << "\nNuevo valor en pos 1 (esperado 99): " << valor;
+    
+    tam = #listaNueva;
+    out << "\nNuevo tamano (esperado 4): " << tam;
+
+    listaNueva = listaNueva -- 0;
+    
+    valor = listaNueva @ 0;
+    out << "\nTras borrar el primero, ahora el 0 es (esperado 99): " << valor << "\n\n";
+    
+    // Pruebas aritmeticas
+    
+    li = [10, 20, 30];
+    lf = [10.0, 20.0, 30.0];
+    
+    li + 5;
+    valInt = li @ 0;
+    out << "Tras sumar 5 (pos 0, esperado 15): " << valInt << "\n";
+
+    li - 10;
+    valInt = li @ 1;
+    out << "Tras restar 10 (pos 1, esperado 15): " << valInt << "\n";
+    
+    li * 2;
+    valInt = li @ 2;
+    out << "Tras multiplicar por 2 (pos 2, esperado 50): " << valInt << "\n";
+    
+    lf / 2.0;
+    valFloat = lf @ 1;
+    out << "Tras dividir por 2.0 (pos 0, esperado 10.0): " << valFloat << "\n\n";
+    
+    // Pruebas de cursores
+    
+    l1 = [10, 20, 30];
+    
+    $l1;       
+    vint = ?l1;
+    out << "Cursor inicio (esperado 10): " << vint << "\n";
+    
+    l1 >>;     
+    vint = ?l1;
+    out << "Cursor avanzado (esperado 20): " << vint << "\n";
+
+    out << "\n--- FIN TEST ---\n";
+}

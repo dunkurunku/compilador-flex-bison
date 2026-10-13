@@ -1,0 +1,13 @@
+init:main
+
+proc main() {
+  <var>
+  int a;
+  float b;
+  <var_>
+
+  a = b + 1;      // tipos incompatibles
+  c = 2;          // variable no declarada
+  if a {          // la condición debe ser bool
+  }if_
+}
