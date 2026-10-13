@@ -1,5 +1,7 @@
 # Compilador con Flex y Bison
 
+[![CI](https://github.com/dunkurunku/compilador-flex-bison/actions/workflows/ci.yml/badge.svg)](https://github.com/dunkurunku/compilador-flex-bison/actions/workflows/ci.yml)
+
 Compilador completo para un pequeño lenguaje imperativo, escrito en C con Flex y Bison. Cubre las fases clásicas de un procesador de lenguajes:
 
 1. **Análisis léxico** (`Lexico.lex`): tokens, literales, comentarios y detección de caracteres no válidos.
