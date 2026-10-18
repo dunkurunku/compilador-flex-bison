@@ -10,7 +10,7 @@ Compilador completo para un pequeño lenguaje imperativo, escrito en C con Flex 
 4. **Generación de código intermedio**: cuádruplos (operación, argumento 1, argumento 2, resultado) con temporales y etiquetas.
 5. **Generación de código final**: los cuádruplos se traducen a C (`salida/main.c`) y se compilan con `gcc` hasta obtener un ejecutable.
 
-Proyecto de la asignatura Procesadores de Lenguajes del Grado en Ingeniería Informática (Universidad de Granada).
+Proyecto personal de construcción de compiladores.
 
 ## El lenguaje fuente
 
@@ -94,4 +94,4 @@ make test
 
 ## English summary
 
-A complete compiler for a small imperative language, written in C with Flex and Bison: lexer, LALR(1) parser with error recovery, semantic analysis with a scoped symbol table and type checking, intermediate code as quadruples, and final code generation to C (compiled with `gcc` into an executable). The language has integer, real, character, boolean and string types, homogeneous lists with cursor operations, nested procedures, `if`/`while`/`repeat` control flow and console I/O. Build with `make sintact`, run the test suite with `make test`. University project for the Language Processors course (Computer Engineering, University of Granada).
+A complete compiler for a small imperative language, written in C with Flex and Bison: lexer, LALR(1) parser with error recovery, semantic analysis with a scoped symbol table and type checking, intermediate code as quadruples, and final code generation to C (compiled with `gcc` into an executable). The language has integer, real, character, boolean and string types, homogeneous lists with cursor operations, nested procedures, `if`/`while`/`repeat` control flow and console I/O. Build with `make sintact`, run the test suite with `make test`. Personal compiler-construction project.
